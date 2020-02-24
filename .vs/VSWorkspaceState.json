@@ -3,14 +3,13 @@
     "",
     "\\blog",
     "\\blogengine",
-    "\\blog\\templates",
-    "\\blog\\templates\\blog",
-    "\\static",
-    "\\static\\css",
-    "\\templates",
+    "\\blogengine\\__pycache__",
+    "\\blog\\__pycache__",
+    "\\partners",
+    "\\partners\\__pycache__",
     "\\think",
-    "\\think\\templates"
+    "\\think\\__pycache__"
   ],
-  "SelectedNode": "\\blog\\models.py",
+  "SelectedNode": "\\Procfile",
   "PreviewInSolutionExplorer": false
 }
