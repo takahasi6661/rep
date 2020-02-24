@@ -1,0 +1,23 @@
+
+
+{% extends 'partners/base_partners.html'%}
+{% block title %}
+{{partner.title}} - {{block.super}}
+{% endblock %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        {{partner.title}}
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p> {{partner.body}}</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+    </div>
+</div>
+
+
+{% endblock %}

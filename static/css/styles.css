@@ -1,0 +1,30 @@
+.admin-panel{
+    border: 1px solid #999;
+    border-radius: 2px;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    opacity: 0.8;
+    padding: 10px;
+}
+
+
+.admin-panel:hover {
+        opacity: 1;
+    }
+
+.admin-panel a {
+        display:block;
+        margin:5px 0;
+    }
+a.edit, a.delete {
+    display:none;
+}
+.page-item.active .page-link {
+    background-color: #8686bf;
+    border-color: #8686bf;
+    
+}
+.page-link {
+    color: #8686bf;
+}

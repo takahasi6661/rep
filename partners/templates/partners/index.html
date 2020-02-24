@@ -1,0 +1,31 @@
+﻿{% extends 'partners/base_partners.html' %}
+
+
+{% block title %}
+        Partners
+        {% endblock %}
+
+{% block content %}
+         
+<h1 class="mb-5">Наши парнеры:</h1>
+{% for partner in partners %}
+  
+
+<div class="card mb-5">
+    <div class="card-header" style="background-color: #ECE0F8;">
+        {{partner.date_pub}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{partner.title}}</h5>
+        <p class="card-text">{{partner.body|truncatewords:15}}</p>
+        <a href="{{ partner.get_absolute_url }}" class="btn btn-light">Read</a>
+    </div>
+  </div>
+
+
+
+
+
+    {% endfor  %}
+
+        {% endblock %}

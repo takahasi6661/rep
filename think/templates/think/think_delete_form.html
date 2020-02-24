@@ -1,0 +1,18 @@
+﻿{% extends 'think/base_think.html'%}
+
+{% block title %}
+Think Delete "{{think.title|title}}" - {{block.super}}
+{%endblock%}
+
+{% block content %}
+<form action="{{think.think_delete_url}}" method="post">
+    {% csrf_token %}
+
+    <h3>Are you sure you want to delete <b>"{{think.title|title}}" </b> think</h3>
+    <a href="{{think.get_absolute_url}}">Cancel</a>
+
+   
+    <button type="submit" class="btn btn-danger">Delete </button>
+
+</form>
+{%endblock%}

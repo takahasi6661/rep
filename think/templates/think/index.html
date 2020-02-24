@@ -1,0 +1,22 @@
+﻿{% extends 'think/base_think.html' %}
+
+
+{% block title %}
+        Thinks
+        {% endblock %}
+
+{% block content %}
+
+<h1 class="mb-5">thinks:</h1>
+{% for think in page_object.object_list %}
+
+
+    {% include 'think/includes/think_card_template.html' %}
+
+
+
+
+
+    {% endfor  %}
+
+        {% endblock %}

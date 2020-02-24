@@ -1,0 +1,20 @@
+﻿{% extends 'think/base_think.html'%}
+{% block title %}
+{{think.title}} - {{block.super}}
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron  mb-50" style="background-color: #ECE0F8;">
+    <h1 class="display-4 mb-2">{{think.title}}</h1>
+    <p class="lead">{{think.body}}</p>
+    <hr class="my-4">
+    <p>{{think.opis}}</p>
+    <p>{{think.date_pub}}</p>
+    <p>{{think.tag.title}}</p>
+    <a class="btn btn-primary btn-lg" style="background-color: #0B0B3B;" style="border-color: #0B0B3B;" href="{{ think.get_absolute_url }}" role="button">Прочитать полностью мысль</a>
+</div>
+
+
+
+{% endblock %}
